@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumen Launch: Product Building Cohort</title>
+  <meta name="description" content="A modern cohort-based course to build and launch production-grade digital products with confidence. Curriculum, timeline, testimonials, and transparent pricing.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: '#0b132b',
+            ink: '#1c2541',
+            steel: '#3a506b',
+            coral: '#ff6b57',
+            amber: '#ffb703',
+            mist: '#e6f1ff',
+            smoke: '#f6f8fb'
+          },
+          fontFamily: {
+            display: ['Manrope', 'ui-sans-serif', 'system-ui'],
+            body: ['Manrope', 'ui-sans-serif', 'system-ui']
+          },
+          boxShadow: {
+            glow: '0 10px 30px rgba(255,107,87,0.18)'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-body text-ink bg-smoke selection:bg-amber selection:text-night">
+  <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:bg-white focus:text-ink focus:px-3 focus:py-2 focus:rounded-md">Skip to content</a>
+
+  <header class="relative z-10">
+    <div class="max-w-7xl mx-auto px-5 py-5 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="h-9 w-9 rounded-md bg-ink flex items-center justify-center text-white font-extrabold tracking-tight" aria-hidden="true">L</div>
+        <span class="text-ink text-lg font-extrabold tracking-tight">Lumen Launch</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#instructor" class="text-ink/80 hover:text-ink transition js-scroll">Instructor</a>
+        <a href="#curriculum" class="text-ink/80 hover:text-ink transition js-scroll">Curriculum</a>
+        <a href="#timeline" class="text-ink/80 hover:text-ink transition js-scroll">Timeline</a>
+        <a href="#testimonials" class="text-ink/80 hover:text-ink transition js-scroll">Stories</a>
+        <a href="#pricing" class="btn-primary whitespace-nowrap">Choose your tier</a>
+      </nav>
+      <button class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md border border-ink/10 text-ink hover:bg-white focus:outline-none focus:ring-2 focus:ring-amber js-open-mobile" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div class="md:hidden hidden px-5 pb-4" id="mobileNav">
+      <div class="flex flex-col space-y-3">
+        <a href="#instructor" class="text-ink/80 hover:text-ink transition js-scroll">Instructor</a>
+        <a href="#curriculum" class="text-ink/80 hover:text-ink transition js-scroll">Curriculum</a>
+        <a href="#timeline" class="text-ink/80 hover:text-ink transition js-scroll">Timeline</a>
+        <a href="#testimonials" class="text-ink/80 hover:text-ink transition js-scroll">Stories</a>
+        <a href="#pricing" class="btn-primary text-center">Choose your tier</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10" aria-hidden="true">
+        <div class="bg-hero h-full w-full"></div>
+      </div>
+      <div class="max-w-4xl mx-auto px-6 pt-16 pb-24 text-center">
+        <p class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/70 backdrop-blur text-ink/80 text-xs md:text-sm shadow">
+          <span class="h-2 w-2 rounded-full bg-amber"></span>
+          <span>Next cohort opens soon. Limited seats.</span>
+        </p>
+        <h1 class="mt-8 text-4xl md:text-6xl font-extrabold tracking-tight text-night">Build and launch with clarity, momentum, and craft</h1>
+        <p class="mt-5 text-lg md:text-xl text-night/70">A 6 week, live cohort guiding you to ship a production-grade product. Learn by building, with expert feedback and a community that shows up.</p>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-3">
+          <a href="#pricing" class="btn-primary whitespace-nowrap js-scroll">Apply for cohort</a>
+          <a href="#curriculum" class="btn-secondary whitespace-nowrap js-scroll">Explore curriculum</a>
+        </div>
+        <div class="mt-12 flex flex-wrap justify-center gap-6 opacity-90">
+          <div class="trust-badge">Featured on Product Hunt</div>
+          <div class="trust-badge">Backed by Makers</div>
+          <div class="trust-badge">Loved by 1,200+ alumni</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructor" class="py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="relative bg-white rounded-2xl shadow-lg p-6 md:p-10 overflow-hidden">
+          <div class="absolute -top-16 -right-16 w-72 h-72 rounded-full bg-amber/20 blur-3xl pointer-events-none" aria-hidden="true"></div>
+          <div class="flex flex-col lg:flex-col gap-8">
+            <div class="flex items-start gap-6">
+              <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop" alt="Instructor portrait" class="w-24 h-24 rounded-xl object-cover shadow-md">
+              <div>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-night">Meet your instructor, Ava Moreno</h2>
+                <p class="mt-2 text-ink/70">Former Head of Product at fast-growing startups. Shipped SaaS used by millions. Mentor to founders and PMs globally. Ava blends crisp strategy with hands-on engineering to help you build what matters.</p>
+                <div class="mt-4 flex flex-wrap gap-4">
+                  <div class="metric"><span class="metric-value" data-target="1200">0</span><span class="metric-label">alumni</span></div>
+                  <div class="metric"><span class="metric-value" data-target="48">0</span><span class="metric-label">cohorts</span></div>
+                  <div class="metric"><span class="metric-value" data-target="97">0</span><span class="metric-label">NPS</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-smoke rounded-xl p-5 md:p-6">
+              <p class="text-ink/80">You will ship. The program is designed for motion and clarity. Weekly sprints, live reviews, and a project that becomes your portfolio centerpiece.</p>
+              <ul class="mt-4 space-y-2 text-ink/70 list-disc list-inside">
+                <li>Live workshops and office hours</li>
+                <li>Small peer squads for accountability</li>
+                <li>Career-focused portfolio and storytelling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-end justify-between">
+          <h2 class="text-3xl font-extrabold text-night">Curriculum outline</h2>
+          <button class="btn-ghost whitespace-nowrap js-toggle-all" aria-expanded="false">Expand all</button>
+        </div>
+        <div id="curriculumList" class="mt-8 space-y-4"></div>
+      </div>
+    </section>
+
+    <section id="timeline" class="py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between">
+          <h2 class="text-3xl font-extrabold text-night">Cohort timeline</h2>
+          <div class="flex items-center gap-2">
+            <button class="btn-ghost h-10 w-10 p-0 rounded-full js-tl-prev" aria-label="Previous milestone">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="btn-ghost h-10 w-10 p-0 rounded-full js-tl-next" aria-label="Next milestone">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="mt-6 overflow-x-auto no-scrollbar">
+          <div id="timelineTrack" class="flex items-stretch gap-4 snap-x snap-mandatory pr-4" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-end justify-between">
+          <h2 class="text-3xl font-extrabold text-night">Alumni stories</h2>
+          <div class="flex items-center gap-2">
+            <button class="btn-ghost h-10 w-10 p-0 rounded-full js-ts-prev" aria-label="Previous story">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="btn-ghost h-10 w-10 p-0 rounded-full js-ts-next" aria-label="Next story">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="mt-6 relative">
+          <div id="testimonialViewport" class="relative h-full">
+            <div id="testimonialSlides" class="relative"></div>
+          </div>
+          <div id="testimonialDots" class="mt-6 flex justify-center gap-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div>
+            <h2 class="text-3xl font-extrabold text-night">Choose your tier</h2>
+            <p class="mt-1 text-ink/70">Transparent pricing. Scholarships available. Pay in full or monthly.</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-sm text-ink/60">Pay in full</span>
+            <button class="toggle" id="pricingToggle" aria-label="Toggle monthly pricing" aria-pressed="false"><span class="knob"></span></button>
+            <span class="text-sm text-ink/60">Monthly</span>
+          </div>
+        </div>
+        <div id="pricingCards" class="mt-8 flex flex-col lg:flex-row gap-6"></div>
+        <p class="mt-6 text-sm text-ink/60">Need support? <a href="#" class="underline js-open-modal" data-tier="Starter">Apply for a scholarship</a>. Limited spots are reserved for makers with financial constraints.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-10 border-t border-ink/10 bg-white">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-ink/60">© <span id="year">2025</span> Lumen Launch. All rights reserved.</p>
+      <div class="flex items-center gap-3">
+        <a href="#instructor" class="text-ink/80 hover:text-ink js-scroll">Instructor</a>
+        <a href="#curriculum" class="text-ink/80 hover:text-ink js-scroll">Curriculum</a>
+        <a href="#pricing" class="btn-secondary whitespace-nowrap js-scroll">Apply now</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modalOverlay" class="fixed inset-0 bg-night/60 hidden items-end sm:items-center justify-center p-0 sm:p-6 z-50" aria-hidden="true">
+    <div role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="w-full sm:max-w-lg bg-white rounded-t-2xl sm:rounded-2xl shadow-xl overflow-hidden">
+      <div class="p-6">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 id="modalTitle" class="text-xl font-extrabold text-night">Join the waitlist</h3>
+            <p class="mt-1 text-ink/70 text-sm">Secure your spot and get early-bird updates.</p>
+          </div>
+          <button class="btn-ghost h-9 w-9 p-0 rounded-full js-close-modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <form id="waitlistForm" class="mt-6 space-y-4" novalidate>
+          <div>
+            <label for="name" class="block text-sm font-medium text-ink">Full name</label>
+            <input type="text" id="name" name="name" class="mt-1 input" placeholder="Jane Doe" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-ink">Email</label>
+            <input type="email" id="email" name="email" class="mt-1 input" placeholder="you@example.com" required>
+            <p class="mt-1 text-xs text-coral hidden" id="emailError">Please enter a valid email.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <div class="flex-1">
+              <label for="tier" class="block text-sm font-medium text-ink">Preferred tier</label>
+              <select id="tier" name="tier" class="mt-1 input">
+                <option value="Starter">Starter</option>
+                <option value="Pro">Pro</option>
+                <option value="Mentor">Mentor</option>
+              </select>
+            </div>
+            <div class="flex-1">
+              <label for="cohort" class="block text-sm font-medium text-ink">Cohort</label>
+              <select id="cohort" name="cohort" class="mt-1 input"></select>
+            </div>
+          </div>
+          <div class="flex items-center justify-between gap-3">
+            <label class="inline-flex items-center gap-2 text-sm text-ink/70 cursor-pointer select-none">
+              <input type="checkbox" id="updates" class="accent-ink">
+              <span>Send me updates and resources</span>
+            </label>
+            <button type="submit" class="btn-primary whitespace-nowrap">Request invite</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <style type="text/tailwindcss" data-teda="tailwind-apply">
+    @layer components {
+      .btn-primary { @apply inline-flex items-center justify-center px-5 py-3 rounded-xl bg-ink text-white text-sm font-semibold shadow hover:bg-night focus:outline-none focus:ring-2 focus:ring-amber transition whitespace-nowrap; }
+      .btn-secondary { @apply inline-flex items-center justify-center px-5 py-3 rounded-xl bg-white text-ink text-sm font-semibold border border-ink/10 hover:border-ink/20 hover:bg-smoke focus:outline-none focus:ring-2 focus:ring-amber transition whitespace-nowrap; }
+      .btn-ghost { @apply inline-flex items-center justify-center px-3 py-2 rounded-xl bg-white text-ink text-sm font-semibold border border-ink/10 hover:border-ink/20 hover:bg-smoke focus:outline-none focus:ring-2 focus:ring-amber transition; }
+      .trust-badge { @apply text-xs md:text-sm px-3 py-1 rounded-full border border-ink/10 bg-white text-ink/70; }
+      .input { @apply w-full rounded-lg border border-ink/15 bg-white px-3.5 py-2.5 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-amber; }
+      .card { @apply rounded-2xl bg-white border border-ink/10 shadow-sm; }
+      .price-pill { @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold; }
+      .feature { @apply flex items-start gap-3 text-ink/80; }
+      .feature i { @apply mt-1 inline-block h-5 w-5 rounded-md bg-amber/30 text-ink flex items-center justify-center; }
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="scripts/helpers.js"></script>
+  <script src="scripts/ui.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

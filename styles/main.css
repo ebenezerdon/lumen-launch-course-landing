@@ -1,0 +1,64 @@
+/* Global styles for Lumen Launch landing */
+:root {
+  --night: #0b132b;
+  --ink: #1c2541;
+  --steel: #3a506b;
+  --coral: #ff6b57;
+  --amber: #ffb703;
+  --mist: #e6f1ff;
+  --smoke: #f6f8fb;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: var(--smoke);
+}
+
+.bg-hero {
+  /* Subtle layered background that avoids heavy gradients */
+  background-color: #f5f8ff;
+  background-image:
+    radial-gradient(60rem 30rem at 20% -10%, rgba(255,183,3,0.18), transparent 60%),
+    radial-gradient(50rem 30rem at 110% 10%, rgba(255,107,87,0.18), transparent 60%);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.metric { display: inline-flex; align-items: baseline; gap: 8px; }
+.metric-value { font-weight: 800; font-size: 1.375rem; color: var(--ink); }
+.metric-label { font-size: 0.75rem; color: rgba(28,37,65,0.6); text-transform: uppercase; letter-spacing: .08em; }
+
+/* Toggle control */
+.toggle { position: relative; width: 54px; height: 30px; border-radius: 999px; background: #eaeef6; border: 1px solid rgba(28,37,65,0.12); transition: background .25s ease, border-color .25s ease; }
+.toggle .knob { position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.08); transition: transform .25s ease; }
+.toggle[aria-pressed="true"] { background: rgba(58,80,107,0.25); border-color: rgba(28,37,65,0.2); }
+.toggle[aria-pressed="true"] .knob { transform: translateX(24px); }
+
+/* Timeline cards */
+.timeline-card { min-width: 280px; max-width: 320px; scroll-snap-align: start; }
+.timeline-card.is-selected { outline: 3px solid rgba(255,183,3,0.6); outline-offset: 2px; }
+
+/* Testimonials */
+.ts-slide { display: none; }
+.ts-slide.is-active { display: block; animation: fadeIn .4s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Accessibility and focus */
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  html, body { scroll-behavior: auto; }
+  .ts-slide.is-active { animation: none; }
+  .toggle .knob { transition: none; }
+}
+
+/* Buttons should never wrap */
+.btn-primary, .btn-secondary, .btn-ghost { white-space: nowrap; }
+
+/* Modal adjustments for small screens */
+#modalOverlay .input { font-size: 14px; }
+
+/* Utility */
+.shadow-soft { box-shadow: 0 10px 30px rgba(28,37,65,0.08); }
